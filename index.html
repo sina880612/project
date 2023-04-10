@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header and footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="image/logo03.ico" type="image/x-icon">
+    <title>DAY BY DAY | 首頁HOME</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="login_block">
+
+            <div class="login">
+
+                <form class="login_form" autocomplete="off">
+
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <a href="#" class="community">使用Google帳號登入</a>
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#" class="community">使用Facebook帳號登入</a>
+                    <hr>
+                    <label for="user"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="user" placeholder="您的帳號">
+                    <br>
+                    <label for="password"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" id="password" placeholder="您的密碼">
+                    <br>
+                    <a href="#">忘記帳號</a>
+                    <a href="#">忘記密碼</a>
+                    <br>
+                    <input type="submit" name="submit" value="登入">
+
+                </form>
+
+            </div><!-- login -->
+
+        </div><!-- login_block -->
+
+        <nav id="nav">
+
+            <div class="nav_inside">
+
+                <a href="index.html"><img class="logo" src='image/logo01.png' alt=""></a>
+
+                <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="menu.html">菜單</a></li>
+                    <li><a href="items.html">所有商品</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+
+            </div><!-- nav_inside -->
+
+            <div class="nav_mobile">
+
+                <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="menu.html">菜單</a></li>
+                    <li><a href="items.html">所有商品</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                    <li><a href="#">登入會員</a></li>
+                    <li><a href="cart.html">購物車</a></li>
+                </ul>
+
+            </div><!-- nav_mobile -->
+
+        </nav>
+
+        <header>
+
+            <div class="main_block">
+
+                <div class="title">
+
+                    <h1>DAY BY DAY</h1>
+
+                </div>
+
+            </div><!-- main block -->
+
+        </header>
+
+        <div class="main_block">
+
+            <h2 class="caption">商品排行</h2>
+
+            <article class="ranking">
+
+                <i class="fa-solid fa-chevron-left" id="backBtn"></i>
+
+                <ul>
+
+                    <li>
+
+                        <a href="detail.html">
+                            <img src='image/home/04.jpg'>
+                            <img src="image/home/05.jpg" class="backimage">
+                        </a>
+                        <div class="product_content">
+                            <h4>日本MARKS&WEB系列精油</h4>
+                            <h5>MARKS&WEB Essential Oil</h5>
+                            <p>NT$900</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src='image/home/01.jpg'>
+                            <img src="image/home/02.jpg" class="backimage">
+                        </a>
+                        <div class="product_content">
+                            <h4>福島吉祥物 赤牛</h4>
+                            <h5>Fukushima Akabeko</h5>
+                            <p>NT$100</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src='image/home/07.jpg'>
+                            <img src="image/home/08.jpg" class="backimage">
+                        </a>
+                        <div class="product_content">
+                            <h4>100%原木線香座</h4>
+                            <h5>Wooden Incense Holder</h5>
+                            <p>NT$250</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src='image/home/09.jpg'>
+                            <img src="image/home/10.jpg" class="backimage">
+                        </a>
+                        <div class="product_content">
+                            <h4>ABS白色膠帶台</h4>
+                            <h5>Tape Dispenser</h5>
+                            <p>NT$200</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src='image/home/11.jpg' alt=""></a>
+                        <div class="product_content">
+                            <h4>荻燒陶杯</h4>
+                            <h5>Ceramic Cup</h5>
+                            <p>NT$300</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <i class="fa-solid fa-chevron-right" id="nextBtn"></i>
+
+            </article><!-- ranking -->
+
+            <h2 id="news" class="caption">焦點商品</h2>
+
+            <section class="recommend_product">
+
+                <div class="recommend">
+
+                    <a href="#" data-aos="fade-up" data-aos-duration="750" data-aos-once="true">
+
+                        <img src='image/home/15.jpg' alt="">
+                        <img src="image/home/16.jpg" alt="">
+
+                        <div class="product_title">
+
+                            <h3>經典商品｜品牌帆布袋</h3>
+                            <p>2023/01/01 WRITTEN BY WANG YU TING</p>
+
+                        </div><!-- product_title -->
+
+                    </a>
+
+                    <a href="#" data-aos="fade-up" data-aos-duration="750" data-aos-delay="250" data-aos-once="true">
+
+                        <img src='image/home/13.jpg' alt="">
+                        <img src="image/home/14.jpg" alt="">
+
+                        <div class="product_title">
+
+                            <h3>聯名商品｜聯名手機殼</h3>
+                            <p>2023/01/01 WRITTEN BY WANG YU TING</p>
+
+                        </div><!-- product_title -->
+
+                    </a>
+
+                </div><!-- recommend -->
+
+            </section><!-- recommend_product -->
+
+            <h2 class="caption">特別企劃</h2>
+
+            <article class="cake01">
+
+                <section class="cake_content">
+
+                    <h3>[ 新商品 ] 無麩質蔬菜鬆餅於01/01開始每日限量販售</h3>
+                    <p>使用山羊奶酪與櫛瓜製作的無麩質蔬菜鬆餅，不同於市面麵粉製成的鬆餅，無麩質材料令鬆餅更加濕潤柔軟，這是無論任何人都會喜愛的一道料理。DAY BY DAY
+                        也利用這個時刻，準備和您分享關於無麩質飲食的特色。
+                    </p>
+                    <a href="topics.html">繼續閱讀</a>
+
+                </section>
+
+                <div class="cake02">
+
+                    <img src='image/home/19.jpg' alt="">
+                    <img src="image/home/20.jpg" alt="">
+
+                </div>
+
+            </article><!-- cake -->
+
+            <form class="subscribe_form" autocomplete="off">
+
+                <section id="su" class="subscribe">
+
+                    <h5>Subscribe Our Newsletter</h5>
+                    <p>訂閱《DAY BY DAY》每月獲得最新消息和活動資訊，讓我們更加認識彼此。</p>
+
+                    <input type="text" name="email" placeholder="您的電子信箱">
+                    <input type="submit" name="subscribe" value="訂閱我們">
+
+                </section>
+
+            </form>
+
+        </div><!-- main_block -->
+
+        <footer>
+
+            <div class="footer_both">
+
+                <div class="footer_left">
+
+                    <img src='image/logo02.png' alt="" class="logo">
+
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                            </a></li>
+                    </ul>
+
+                    <div class="info">
+
+                        <p>營業時間</p>
+                        <br>
+                        <p>09:00-18:00</p>
+                        <br>
+                        <p>聯絡資訊</p>
+                        <br>
+                        <p>
+                            電話｜02-3322-2777
+                            <br>信箱｜thd101@tibame.com
+                            <br>地址｜台北市中正區濟南路一段321號
+                        </p>
+
+                    </div>
+
+                </div><!-- footer_left -->
+
+                <div class="footer_right">
+
+
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">訂閱我們</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="menu.html">菜單</a></li>
+                        <li><a href="topics.html">特別企劃</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="items.html">所有商品</a></li>
+                        <li><a href="#">文具</a></li>
+                        <li><a href="#">裝飾用品</a></li>
+                        <li><a href="#">服裝配件</a></li>
+                        <li><a href="#">居家用品</a></li>
+                        <li><a href="#">聯名商品</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="#">登入會員</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="cart.html">購物車</a></li>
+                    </ul>
+
+                </div><!-- footer_right -->
+
+            </div><!-- footer_both -->
+
+        </footer>
+
+    </div> <!-- wrapper -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            $(".nav_inside ul li:last-child").click(function () {
+
+                $(".nav_mobile").slideToggle();
+
+            });
+
+        });
+
+    </script>
+
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+
+            var currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos > currentScrollPos) {
+
+                $("#nav").slideDown();
+
+            } else {
+
+                $(".nav_mobile").slideUp(function () {
+
+                    $("#nav").slideUp();
+
+                });
+
+            }
+
+            prevScrollpos = currentScrollPos;
+
+        }
+
+    </script>
+
+    <script>
+
+        AOS.init();
+
+        let scrollContainer = document.querySelector(".ranking ul");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 1000;
+        })
+
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 1000;
+        })
+
+    </script>
+
+    <script>
+
+        $(function () {
+
+            $(".nav_inside ul li:nth-child(5) a").click(function (a) {
+
+                a.preventDefault();
+
+                $(".login_block").fadeIn();
+
+            })
+
+            $(".nav_mobile ul li:nth-child(5) a").click(function (b) {
+
+                b.preventDefault();
+
+                $(".nav_mobile").slideUp(function () {
+
+                    $("#nav").slideUp();
+
+                });
+
+                $(".login_block").fadeIn();
+
+            });
+
+            $(".footer_right ul:nth-of-type(4) li:nth-of-type(2) a").click(function (c) {
+
+                c.preventDefault();
+
+                $(".login_block").fadeIn();
+
+            })
+
+            $(".fa-xmark").click(function () {
+
+                $(".login_block").fadeOut();
+
+            })
+
+            $(".login_block").click(function () {
+
+                $(".login").click(function (s) {
+
+                    s.stopPropagation();
+                })
+
+                $(".login_block").fadeOut();
+
+            })
+
+        })
+
+    </script>
+
+</body>
+
+</html>

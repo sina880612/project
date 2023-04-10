@@ -1,0 +1,181 @@
+@import url('reset.css');
+
+body {
+    background-color: #F2EFEB;
+    font-family: 'Noto Sans TC';
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+/* ---------- nav ---------- */
+
+.nav_inside ul li:nth-child(4) a {
+    font-weight: 700;
+}
+
+/* ---------- form ---------- */
+
+.contact {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.contact_form {
+    text-align: left;
+    display: inline-block;
+}
+
+.contact_form input {
+    background-color: #D9C9BA;
+    margin: 10px 15.5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.contact_form input:focus {
+    outline: none;
+}
+
+.contact_form input[type="text"] {
+    margin-right: 33.5px;
+}
+
+.contact_form input[type="radio"] {
+    accent-color: #3D403A;
+}
+
+.contact_form p {
+    font-size: 15px;
+    color: #888C81;
+}
+
+.contact_form textarea {
+    border: none;
+    background-color: #D9C9BA;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.contact_form textarea:focus {
+    outline: none;
+    line-height: 1.5;
+}
+
+.contact_form select {
+    background-color: #D9C9BA;
+    margin: 10px 10.5px;
+    padding: 10px;
+    border: none;
+}
+
+.contact_form select:focus {
+    outline: none;
+}
+
+.contact_form [type="submit"] {
+    display: block;
+    background-color: #3D403A;
+    color: #F2EFEB;
+    width: 100px;
+    letter-spacing: 0.5px;
+    margin: 10px auto;
+    font-size: 15px;
+}
+
+.contact_form [type="submit"]:hover {
+    color: #888C81;
+}
+
+.mobile{
+    display: none;
+}
+
+/* ---------- rwd ---------- */
+
+@media screen and (max-width: 414px) {
+
+    .contact {
+        padding: 40px 0 80px 7.5px;
+    }
+
+    .contact_form{
+        display: none;
+    }
+
+    .mobile {
+        text-align: left;
+        display: block;
+        padding: 20px;
+    }
+
+    .mobile input {
+        background-color: #D9C9BA;
+        margin: 10px 15.5px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    .mobile input:focus {
+        outline: none;
+    }
+    
+    .mobile input[type="text"] {
+        margin-right: 15.5px;
+    }
+    
+    .mobile input[type="radio"] {
+        accent-color: #3D403A;
+    }
+    
+    .mobile p {
+        font-size: 11.5px;
+        color: #888C81;
+    }
+    
+    .mobile textarea {
+        border: none;
+        background-color: #D9C9BA;
+        margin: 10px 0;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    
+    .mobile textarea:focus {
+        outline: none;
+        line-height: 1.5;
+    }
+    
+    .mobile select {
+        background-color: #D9C9BA;
+        margin: 10px 10.5px;
+        padding: 10px;
+        border: none;
+        width: 260.5px;
+    }
+    
+    .mobile select:focus {
+        outline: none;
+    }
+    
+    .mobile [type="date"]{
+        width: 260.5px;
+    }
+
+    .mobile [type="submit"] {
+        display: block;
+        background-color: #3D403A;
+        color: #F2EFEB;
+        width: 100px;
+        letter-spacing: 0.5px;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+    
+    .mobile [type="submit"]:hover {
+        color: #888C81;
+    }
+
+}

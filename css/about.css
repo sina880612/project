@@ -1,0 +1,222 @@
+@import url('reset.css');
+
+body {
+    background-color: #F2EFEB;
+    font-family: 'Noto Sans TC';
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+/* ---------- nav ---------- */
+
+.nav_inside ul li:nth-child(1) a {
+    font-weight: 700;
+}
+
+/* ----------brand---------- */
+
+.brand {
+    text-align: center;
+}
+
+.brand img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.brand p {
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    padding: 40px 0;
+    width: 750px;
+}
+
+/* ----------everyday---------- */
+
+.everyday {
+    background-image: url(../image/about/everyday.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.everyday h1 {
+    font-family: 'Noto Sans TC';
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1.5px #000000;
+    line-height: 600px;
+    display: block;
+}
+
+/* ---------- image_block ---------- */
+
+.image_block {
+    display: flex;
+    margin: 80px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.space {
+    background-color: #3D403A;
+    width: 50%;
+    position: relative;
+}
+
+.space p {
+    color: #D9C9BA;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.space img {
+    display: block;
+    width: 100%;
+    opacity: 40%;
+    transition: opacity .5s
+}
+
+.space img:hover {
+    opacity: 80%;
+    transition: opacity .5s
+}
+
+.store {
+    background-color: #3D403A;
+    width: 50%;
+    position: relative;
+}
+
+.store p {
+    color: #D9C9BA;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.store img {
+    display: block;
+    width: 100%;
+    opacity: 40%;
+    transition: opacity .5s
+}
+
+.store img:hover {
+    opacity: 80%;
+    transition: opacity .5s
+}
+
+/* ---------- map ---------- */
+
+.map {
+    display: flex;
+    padding: 80px 0;
+    align-items: end;
+    width: 100%;
+}
+
+.map iframe:nth-of-type(1) {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.map iframe:nth-of-type(2) {
+    display: none;
+}
+
+.map_content p {
+    color: #3D403A;
+    padding: 0 60px 0 20px;
+}
+
+.map_content span {
+    font-weight: 700;
+}
+
+/* ---------- rwd ---------- */
+
+@media screen and (max-width: 414px) {
+
+    .main_block {
+        width: auto
+    }
+
+    .brand img {
+        margin: 80px auto;
+        width: 80%;
+    }
+
+    .brand p {
+        padding: 20px;
+        width: auto;
+        margin-bottom: 80px;
+    }
+
+    .everyday h1 {
+        font-size: 25px;
+        line-height: 200px;
+        letter-spacing: 3.5px
+    }
+
+    .image_block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0;
+    }
+
+    .space {
+        width: 100%;
+        margin: 40px 0 0;
+    }
+
+    .store {
+        width: 100%;
+    }
+
+    .map {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .map iframe:nth-of-type(1) {
+        display: none;
+    }
+
+    .map iframe:nth-of-type(2) {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .map_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map_content h2 {
+        text-align: left;
+    }
+
+    .map_content p {
+        padding: 0;
+        margin-bottom: 40px;
+        display: inline-block;
+        text-align: left;
+        font-size: 22.5px;
+    }
+
+}

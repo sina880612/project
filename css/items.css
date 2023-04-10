@@ -1,0 +1,147 @@
+@import url('reset.css');
+
+body {
+    background-color: #F2EFEB;
+    font-family: 'Noto Sans TC';
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+/* ---------- nav ---------- */
+
+.nav_inside ul li:nth-child(3) a {
+    font-weight: 700;
+}
+
+/* ---------- main ---------- */
+
+.main_inside {
+    display: flex;
+}
+
+.main_left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_left ul {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.main_left ul li {
+    line-height: 0;
+    width: 28.5%;
+    margin: 0 20px 20px;
+}
+
+.main_left ul li a {
+    display: block;
+    position: relative;
+}
+
+.main_left ul li img {
+    display: block;
+    width: 100%;
+}
+
+.backimage {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.backimage:hover {
+    opacity: 1;
+}
+
+.product_content {
+    text-align: left;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.product_content h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3D403A;
+}
+
+.product_content h5 {
+    font-size: 15px;
+    color: #888C81;
+}
+
+.product_content p {
+    font-weight: 700;
+    text-align: right;
+    color: #3D403A;
+    padding-top: 10px;
+}
+
+/* ---------- main_right ---------- */
+
+.main_right {
+    padding: 125px 40px 40px;
+    flex-shrink: 0;
+}
+
+.main_right_category {
+    padding: 0 10px 200px 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 145px;
+}
+
+.main_right_category a {
+    text-decoration: none;
+    color: #3D403A;
+    line-height: 2;
+}
+
+.main_right_category a:hover {
+    color: #888C81;
+}
+
+.main_right_category a:nth-child(1) {
+    font-weight: 700;
+}
+
+/* ---------- rwd ---------- */
+
+@media screen and (max-width: 414px) {
+
+    .main_right {
+        display: none;
+    }
+
+    .main_right_category {
+        display: none;
+    }
+
+    .main_left {
+        width: 100%;
+    }
+
+    .main_left ul {
+        padding-top: 0px;
+        margin: 0 15px;
+    }
+
+    .main_left ul li {
+        width: 40%;
+        margin: 0 5px 40px;
+        flex-grow: 1;
+    }
+
+    .main_left ul li:nth-child(3n+1) {
+        width: 100%;
+    }
+
+    .product_content h5 {
+        font-size: 12.5px;
+    }
+
+}
