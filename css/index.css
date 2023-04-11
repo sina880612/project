@@ -365,3 +365,15 @@ body {
     }
 
 }
+
+@media screen and (max-width: 390px){
+
+    .subscribe h5 {
+        font-size: 20px;
+    }
+
+    .subscribe input[type=text] {
+        width: 62.5%;
+    }
+
+}
