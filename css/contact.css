@@ -186,12 +186,22 @@ body {
         margin-right: 15px;
     }
 
+    .mobile input[ type="tel"] {
+        width: 80%;
+    }
+    
+    .mobile input[ type="email"] {
+        width: 80%;
+    }
+
     .mobile select {
-        width: 240.5px;
+        width: 240px;
     }
 
     .mobile [type="date"] {
-        width: 240.5px;
+        width: 240px;
     }
-    
+
+
+
 }
