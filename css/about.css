@@ -46,7 +46,8 @@ body {
     font-size: 80px;
     font-weight: 900;
     letter-spacing: 5px;
-    -webkit-text-stroke: 1.5px #000000;
+    -webkit-text-stroke: 2.5px #000000;
+    text-shadow: #F2EFEB 1px 0 50px;
     line-height: 600px;
     display: block;
 }
