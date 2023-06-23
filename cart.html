@@ -81,15 +81,19 @@
 
         <header>
 
-            <div class="main_block">
+            <div class="out_block">
 
-                <div class="title">
+                <div class="main_block">
 
-                    <h1>CART</h1>
+                    <div class="title">
 
-                </div>
+                        <h1>CART</h1>
 
-            </div><!-- main block -->
+                    </div>
+
+                </div><!-- main block -->
+
+            </div><!-- out block -->
 
         </header>
 
@@ -107,9 +111,9 @@
                         <img src="image/cart/thumbnail01.jpg" alt="">
 
                         <div class="cart_content">
-                            <h4>日本MARKS&WEB 系列精油</h3>
-                                <p>天竺葵（15ml）</p>
-                                <p>NT$900</p>
+                            <h4>日本MARKS&WEB 系列精油</h4>
+                            <p>天竺葵（15ml）</p>
+                            <p>NT$900</p>
                         </div>
 
                         <input type="number" value="1" min="1" max="5">
@@ -120,32 +124,30 @@
                     <div class="cart_inside">
 
                         <i class="fa-solid fa-xmark"></i>
-                        <img src="image/cart/thumbnail01.jpg" alt="">
+                        <img src="image/cart/thumbnail02.jpg" alt="">
 
                         <div class="cart_content">
-                            <h4>日本MARKS&WEB 系列精油</h3>
-                                <p>天竺葵（15ml）</p>
-                                <p>NT$900</p>
+                            <h4>福島吉祥物 赤牛</h4>
+                            <p>NT$100</p>
                         </div>
 
                         <input type="number" value="1" min="1" max="5">
-                        <p>NT$900</p>
+                        <p>NT$100</p>
 
                     </div><!-- cart_inside -->
 
                     <div class="cart_inside">
 
                         <i class="fa-solid fa-xmark"></i>
-                        <img src="image/cart/thumbnail01.jpg" alt="">
+                        <img src="image/cart/thumbnail03.jpg" alt="">
 
                         <div class="cart_content">
-                            <h4>日本MARKS&WEB 系列精油</h3>
-                                <p>天竺葵（15ml）</p>
-                                <p>NT$900</p>
+                            <h4>100%原木線香座</h4>
+                            <p>NT$250</p>
                         </div>
 
                         <input type="number" value="1" min="1" max="5">
-                        <p>NT$900</p>
+                        <p>NT$250</p>
 
                     </div><!-- cart_inside -->
 
@@ -155,7 +157,7 @@
 
                     <p>3項商品</p>
                     <p>總金額：</p>
-                    <p>NT$2,700</p>
+                    <p>NT$1250</p>
                     <a href="#">直接購買</a>
 
                 </div><!-- cart_right -->
@@ -199,17 +201,15 @@
 
                 <div class="footer_right">
 
-
                     <ul>
                         <li><a href="index.html">首頁</a></li>
-                        <li><a href="#">最新消息</a></li>
                         <li><a href="#">訂閱我們</a></li>
                     </ul>
 
                     <ul>
                         <li><a href="about.html">關於我們</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
                         <li><a href="menu.html">菜單</a></li>
-                        <li><a href="topics.html">特別企劃</a></li>
                     </ul>
 
                     <ul>
@@ -222,7 +222,6 @@
                     </ul>
 
                     <ul>
-                        <li><a href="contact.html">聯絡我們</a></li>
                         <li><a href="#">登入會員</a></li>
                     </ul>
 
@@ -239,103 +238,8 @@
     </div> <!-- wrapper -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-
-        $(function () {
-
-            $(".nav_inside ul li:last-child").click(function () {
-
-                $(".nav_mobile").slideToggle();
-
-            });
-
-        });
-
-    </script>
-
-    <script>
-
-        var prevScrollpos = window.pageYOffset;
-
-        window.onscroll = function () {
-
-            var currentScrollPos = window.pageYOffset;
-
-            if (prevScrollpos > currentScrollPos) {
-
-                $("#nav").slideDown();
-
-            } else {
-
-                $(".nav_mobile").slideUp(function () {
-
-                    $("#nav").slideUp();
-
-                });
-
-            }
-
-            prevScrollpos = currentScrollPos;
-
-        }
-
-    </script>
-
-    <script>
-
-        $(function () {
-
-            $(".nav_inside ul li:nth-child(5) a").click(function (a) {
-
-                a.preventDefault();
-
-                $(".login_block").fadeIn();
-
-            });
-
-            $(".nav_mobile ul li:nth-child(5) a").click(function (b) {
-
-                b.preventDefault();
-
-                $(".nav_mobile").slideUp(function () {
-
-                    $("#nav").slideUp();
-
-                });
-
-                $(".login_block").fadeIn();
-
-            });
-
-            $(".footer_right ul:nth-of-type(4) li:nth-of-type(2) a").click(function (c) {
-
-                c.preventDefault();
-
-                $(".login_block").fadeIn();
-
-            })
-
-            $(".fa-xmark").click(function () {
-
-                $(".login_block").fadeOut();
-
-            });
-
-            $(".login_block").click(function () {
-
-                $(".login").click(function (s) {
-
-                    s.stopPropagation();
-                })
-
-                $(".login_block").fadeOut();
-
-            });
-
-        });
-
-    </script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/login.js"></script>
 
 </body>
 

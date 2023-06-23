@@ -223,8 +223,8 @@ body {
     background-color: #3D403A;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
-    width: 140px;
+    line-height: 45px;
+    width: 150px;
 }
 
 .cake_content a:hover {
@@ -275,7 +275,7 @@ body {
 .subscribe p {
     font-size: 15px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .subscribe input[type=text] {
@@ -283,7 +283,7 @@ body {
     border: none;
     display: inline-block;
     width: 350px;
-    padding: 11.5px;
+    padding: 13.5px;
     font-size: 15px;
     letter-spacing: 1.5px;
 }
@@ -297,8 +297,8 @@ body {
     background-color: #3D403A;
     border: none;
     display: inline-block;
-    width: 100px;
-    padding: 10px;
+    width: 125px;
+    padding: 12.5px;
     font-size: 15px;
     letter-spacing: 0.5px;
 }
@@ -360,20 +360,8 @@ body {
         margin: 10px 0 20px;
     }
 
-    .subscribe input[type=text] {
-        width: 65%;
-    }
-
-}
-
-@media screen and (max-width: 390px){
-
-    .subscribe h5 {
-        font-size: 20px;
-    }
-
-    .subscribe input[type=text] {
-        width: 62.5%;
+    .subscribe input[type=submit]{
+        margin-top: 10px;
     }
 
 }

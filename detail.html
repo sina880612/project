@@ -81,15 +81,19 @@
 
         <header>
 
-            <div class="main_block">
+            <div class="out_block">
 
-                <div class="title">
+                <div class="main_block">
 
-                    <h1>DETAIL</h1>
+                    <div class="title">
 
-                </div>
+                        <h1>DETAIL</h1>
 
-            </div><!-- main_block -->
+                    </div>
+
+                </div><!-- main_block -->
+
+            </div><!-- out_block -->
 
         </header>
 
@@ -224,17 +228,15 @@
 
                 <div class="footer_right">
 
-
                     <ul>
                         <li><a href="index.html">首頁</a></li>
-                        <li><a href="#">最新消息</a></li>
                         <li><a href="#">訂閱我們</a></li>
                     </ul>
 
                     <ul>
                         <li><a href="about.html">關於我們</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
                         <li><a href="menu.html">菜單</a></li>
-                        <li><a href="topics.html">特別企劃</a></li>
                     </ul>
 
                     <ul>
@@ -247,7 +249,6 @@
                     </ul>
 
                     <ul>
-                        <li><a href="contact.html">聯絡我們</a></li>
                         <li><a href="#">登入會員</a></li>
                     </ul>
 
@@ -264,48 +265,8 @@
     </div> <!-- wrapper -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-
-        $(function () {
-
-            $(".nav_inside ul li:last-child").click(function () {
-
-                $(".nav_mobile").slideToggle();
-
-            });
-
-        });
-
-    </script>
-
-    <script>
-
-        var prevScrollpos = window.pageYOffset;
-
-        window.onscroll = function () {
-
-            var currentScrollPos = window.pageYOffset;
-
-            if (prevScrollpos > currentScrollPos) {
-
-                $("#nav").slideDown();
-
-            } else {
-
-                $(".nav_mobile").slideUp(function () {
-
-                    $("#nav").slideUp();
-
-                });
-
-            }
-
-            prevScrollpos = currentScrollPos;
-
-        }
-
-    </script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/login.js"></script>
 
     <script>
 
@@ -316,61 +277,6 @@
                 a.preventDefault();
                 var img_url = $(this).attr('href');
                 $(".img_left > img").attr('src', img_url);
-
-            })
-
-        })
-
-    </script>
-
-    <script>
-
-        $(function () {
-
-            $(".nav_inside ul li:nth-child(5) a").click(function (a) {
-
-                a.preventDefault();
-
-                $(".login_block").fadeIn();
-
-            })
-
-            $(".nav_mobile ul li:nth-child(5) a").click(function (b) {
-
-                b.preventDefault();
-
-                $(".nav_mobile").slideUp(function () {
-
-                    $("#nav").slideUp();
-
-                });
-
-                $(".login_block").fadeIn();
-
-            });
-
-            $(".footer_right ul:nth-of-type(4) li:nth-of-type(2) a").click(function (c) {
-
-                c.preventDefault();
-
-                $(".login_block").fadeIn();
-
-            })
-
-            $(".fa-xmark").click(function () {
-
-                $(".login_block").fadeOut();
-
-            })
-
-            $(".login_block").click(function () {
-
-                $(".login").click(function (s) {
-
-                    s.stopPropagation();
-                })
-
-                $(".login_block").fadeOut();
 
             })
 

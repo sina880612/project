@@ -51,31 +51,31 @@
 }
 
 .login_form .fa-user {
-    top: 190.5px;
+    top: 205px;
     left: 63.5px;
 }
 
 .login_form .fa-lock {
-    top: 235.5px;
+    top: 260px;
     left: 63.5px;
 }
 
 .login_form .fa-google {
     color: #F2EFEB;
-    top: 73.5px;
+    top: 76.5px;
     left: 63.5px;
 }
 
 .login_form .fa-facebook {
     color: #F2EFEB;
-    top: 123.5px;
+    top: 130.5px;
     left: 63.5px;
 }
 
 .login_form input {
     background-color: #D9C9BA;
     margin: 5px 0;
-    padding: 10px;
+    padding: 15px;
     padding-left: 36.5px;
     width: 230px;
     box-sizing: border-box;
@@ -93,6 +93,7 @@
     width: 115px;
     letter-spacing: 0.5px;
     padding-left: 10px;
+    padding: 13.5px;
 }
 
 .login_form [type="submit"]:hover {
@@ -132,6 +133,7 @@
     font-size: 13.5px;
     color: #F2EFEB;
     margin: 9.5px 0;
+    padding: 12.35px;
 }
 
 .login_form .community:nth-of-type(1) {
@@ -269,17 +271,11 @@ nav {
 
 /* ----------header---------- */
 
-.main_block {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 header {
     background-image: url(../image/01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 120px;
     animation: image 20s ease-in-out infinite;
 }
 
@@ -317,6 +313,15 @@ header {
     -webkit-text-stroke: 1.25px #F2EFEB;
     -webkit-text-fill-color: transparent;
     padding-top: 350px;
+}
+
+.out_block{
+    margin-top: 125px;
+}
+
+.main_block {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* ----------footer---------- */
@@ -399,7 +404,6 @@ p:nth-child(5) {
 
     .breadcrumb {
         padding: 10px 20px;
-        text-align: center;
     }
 
     .main_block {

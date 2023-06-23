@@ -28,7 +28,7 @@ body {
 .contact_form input {
     background-color: #D9C9BA;
     margin: 10px 15.5px;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     border: none;
 }
@@ -43,6 +43,14 @@ body {
 
 .contact_form input[type="radio"] {
     accent-color: #3D403A;
+}
+
+.contact_form label:nth-of-type(7){
+    margin-left: 5px;
+}
+
+.contact_form input[type="date"] {
+    padding: 13px;
 }
 
 .contact_form p {
@@ -64,10 +72,18 @@ body {
 }
 
 .contact_form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../image/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
     background-color: #D9C9BA;
     margin: 10px 10.5px;
-    padding: 10px;
+    padding: 14px;
     border: none;
+    width: 145px;
 }
 
 .contact_form select:focus {
@@ -78,9 +94,10 @@ body {
     display: block;
     background-color: #3D403A;
     color: #F2EFEB;
-    width: 100px;
+    width: 125px;
     letter-spacing: 0.5px;
     margin: 10px auto;
+    padding: 12.5px;
     font-size: 15px;
 }
 
@@ -113,7 +130,7 @@ body {
     .mobile input {
         background-color: #D9C9BA;
         margin: 10px 15.5px;
-        padding: 10px;
+        padding: 15px;
         box-sizing: border-box;
         border: none;
     }
@@ -124,6 +141,14 @@ body {
 
     .mobile input[type="text"] {
         margin-right: 15.5px;
+    }
+
+    .mobile input[type="tel"] {
+        width: 80%;
+    }
+
+    .mobile input[ type="email"] {
+        width: 80%;
     }
 
     .mobile input[type="radio"] {
@@ -141,6 +166,7 @@ body {
         margin: 10px 0;
         padding: 10px;
         line-height: 1.5;
+        width: 90%;
     }
 
     .mobile textarea:focus {
@@ -149,9 +175,16 @@ body {
     }
 
     .mobile select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('../image/chevron-down.svg');
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
         background-color: #D9C9BA;
         margin: 10px 10.5px;
-        padding: 10px;
+        padding: 15px;
         border: none;
         width: 260.5px;
     }
@@ -162,46 +195,22 @@ body {
 
     .mobile [type="date"] {
         width: 260.5px;
+        padding: 13px;
     }
 
     .mobile [type="submit"] {
         display: block;
         background-color: #3D403A;
         color: #F2EFEB;
-        width: 100px;
+        width: 125px;
         letter-spacing: 0.5px;
         margin: 10px auto;
         font-size: 15px;
+        padding: 12.5px;
     }
 
     .mobile [type="submit"]:hover {
         color: #888C81;
     }
-
-}
-
-@media screen and (max-width: 390px) {
-
-    .mobile input[type="text"] {
-        margin-right: 15px;
-    }
-
-    .mobile input[ type="tel"] {
-        width: 80%;
-    }
-    
-    .mobile input[ type="email"] {
-        width: 80%;
-    }
-
-    .mobile select {
-        width: 240px;
-    }
-
-    .mobile [type="date"] {
-        width: 240px;
-    }
-
-
 
 }

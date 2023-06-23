@@ -51,6 +51,10 @@ body {
     font-weight: 700;
 }
 
+.cart_content{
+    width: 210px;
+}
+
 .cart_content p {
     color: #888C81;
     font-size: 10px;
@@ -98,8 +102,12 @@ body {
     background-color: #3D403A;
     color: #F2EFEB;
     text-align: center;
-    padding: 12.5px;
+    padding: 11.25px;
     font-size: 15px;
+}
+
+.cart_right a:hover{
+    color: #888C81;
 }
 
 /* ---------- rwd ---------- */
@@ -165,6 +173,7 @@ body {
 
     .cart_right a{
         font-size: 17.5px;
+        padding: 9.5px;
     }
 
 }
